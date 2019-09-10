@@ -1,0 +1,1 @@
+    insert into LANGUAGES (welcomeMsg, code) values ('Willkomme', 'de')

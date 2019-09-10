@@ -1,2 +1,2 @@
-    insert into LANGUAGES (WELCOME_MSG, CODE) values ('Hello', 'en');
-    insert into LANGUAGES (WELCOME_MSG, CODE) values ('Siemanko', 'pl');
+    insert into LANGUAGES (welcomeMsg, code) values ('Hello', 'en');
+    insert into LANGUAGES (welcomeMsg, code) values ('Siemanko', 'pl');
