@@ -51,7 +51,7 @@
                 .then(() => todoText.value = '')
                 .catch(console.warn);
         });
-
+        
 
         function createNewTodo(todo) {
             const label = document.createElement('label');

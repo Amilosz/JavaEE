@@ -21,7 +21,7 @@ public class HelloServiceTest {
         var SUT = new HelloService(mockRepository);
 
         // when
-        var result = SUT.prepareGreeting(null, "-1");
+        var result = SUT.prepareGreeting(null, -1);
 
         //then
         assertEquals(WELCOME + " " + HelloService.FALLBACK_NAME + "!", result);
@@ -35,7 +35,7 @@ public class HelloServiceTest {
         var name = "Mistrz";
 
         //when
-        var result = SUT.prepareGreeting(name, "-1");
+        var result = SUT.prepareGreeting(name, -1);
 
         //then
         assertEquals(WELCOME + " " + name + "!", result);
@@ -53,7 +53,7 @@ public class HelloServiceTest {
         //then
         assertEquals(FALLBACKO_ID_WELCOME + " " + HelloService.FALLBACK_NAME + "!", result);
     }
-    @Test
+    /*@Test
     public void test_prepareGreeting_textlLang_returnsGreetingWithFallbackIdLang() throws Exception {
         //given
         var mockRepository = fallbackLangIdRepository();
@@ -64,7 +64,7 @@ public class HelloServiceTest {
 
         //then
         assertEquals(FALLBACKO_ID_WELCOME + " " + HelloService.FALLBACK_NAME + "!", result);
-    }
+    }*/
     @Test
     public void test_prepareGreeting_nonExistingLang_returnsGreetingWithFallbackLang() throws Exception {
         //given
@@ -77,7 +77,7 @@ public class HelloServiceTest {
         var SUT = new HelloService(mockRepository);
 
         //when
-        var result = SUT.prepareGreeting(null, "-1");
+        var result = SUT.prepareGreeting(null, -1);
 
         //then
         assertEquals(HelloService.FALLBACK_LANG.getWelcomeMsg() + " " + HelloService.FALLBACK_NAME + "!", result);
