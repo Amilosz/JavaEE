@@ -1,4 +1,4 @@
-# KursUdemySpring
+# JavaEE
 
 Kurs z strony udemy.com
 Java - ambitny start. Zbuduj aplikację webową!
